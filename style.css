@@ -1,0 +1,263 @@
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  height: 100px;
+  border-radius: 50%;
+}
+
+#title{
+  display: flex;
+  padding-left: 19%;
+  padding-right: 19%;
+  padding-top: 5%;
+  gap: 8%;
+  align-items: center;
+  justify-content: center;
+}
+.title-head{
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.btn-1{
+  border: none;
+  background-color: white;
+  color: black;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 6px;
+  margin-right: 2%;
+  font-size: 20px;
+}
+.btn-2{
+  border-color: white;
+  color: black;
+ 
+  border-style: solid;
+  border-width: 1px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  font-size: 20px;
+  border-radius: 6px;
+}
+.btn-1:hover{
+  opacity: 0.8;
+}
+.btn-2:hover{
+  background-color: white;
+  color: black;
+transition: transform 2s ease-in ;
+}
+.icon{
+  float: left;
+  font-size: 40px;
+  margin-right: 12px;
+}
+.body{
+  float: right;
+}
+#features{
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding: 100px;
+  /* background-color: #00bfff; */
+}
+.dog{
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin-left: 45%;
+  margin-top: 30px;
+}
+.dog-text{
+  margin-left: 43%;
+  font-size: 20px;
+}
+.font2{
+  font-size: 33px;
+  font-weight: 500;
+  text-align: center;
+}
+#testimonial{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  padding: 100px;
+  /* background-color: #ef8172; */
+}
+.comany-logo{
+  height: 30px;
+  width: 150px;
+}
+.company{
+  display: flex;
+  gap: 13%;
+  /* align-items: center; */
+  justify-content: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 40px;
+  padding-top: 50px;
+}
+#pricing{
+  justify-content: center;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+  padding-top: 10px;
+}
+.cards{
+  display: flex;
+  gap: 2%;
+  padding-top: 20px;
+}
+.card1,.card2,.card3{
+  width: 32%;
+}
+a{
+  width: 100%;
+  
+}
+.btn{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+.bc{
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+}
+#footer{
+  display: flex;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  gap: 40%;
+}
+.foot{
+  display: flex;
+  gap: 90%;
+}
+
+@media (min-width:768px){
+  #title,#features,#testimonial,#pricing,#footer{
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+/* @media (min-width:700px){
+  #title,#features,#testimonial,#pricing,#footer{
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .foot{
+    display: flex;
+    gap: 50%;
+  } */
+/* } */
+  @media (max-width:600px){
+    #title,#features,#pricing,#footer{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    #title{
+      flex-wrap: wrap-reverse;
+      justify-content: flex-start;
+    }
+    .title-head{
+      font-size: 30px;
+      margin-top: 30px;
+    }
+    .img-dog{
+      height: 500px;
+    }
+    .btn-1,.btn-2{
+      width: 100%;
+      margin-top: 10px;
+    }
+    .feature1,.feature2,.feature3{
+      width: 100%;
+
+    }
+    #features{
+      display: flex;
+      flex-wrap: wrap;
+      gap:30px;
+    }
+    #testimonial{
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    .font2{
+      font-size: 25px;
+    }
+    .dog{
+      border-radius: 50%;
+      height: 100px;
+      width: 100px;
+      margin-left: 7%;
+      margin-top: 30px;
+    }
+    .dog-text{
+      margin-left: 7%;
+      font-size: 20px;
+    }
+    .company{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .cards{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .card1,.card2,.card3{
+      width: 100%;
+      margin-top: 10px;
+    }
+    #footer{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .copywright{
+      margin-bottom: 20px;
+    }
+    .foot{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .section1,.section2,.section3{
+      margin-top: 10px;
+    }
+  }
